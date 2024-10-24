@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="MasterSuit">
+<listeners>
+<listener class-name="issuemanager.utilities.CustomTestListener"></listener>
+</listeners>
+  <test thread-count="5" name="Test">
+  <parameter name="os" value="Windows"></parameter>
+  <parameter name="browser" value="firefox"></parameter>
+    <classes>
+      <class name="issuemanagertestcases.LoginPageTestCases"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
