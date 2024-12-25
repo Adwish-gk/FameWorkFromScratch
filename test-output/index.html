@@ -25,7 +25,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+      <span class="top-banner-font-1">1 suite</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -39,7 +39,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-MasterSuit" class="navigator-link">
-              <span class="suite-name border-failed">MasterSuit</span>
+              <span class="suite-name border-passed">MasterSuit</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -92,21 +92,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">3 methods, 1 failed,   2 passed</span>
-                  </li>
-                  <li>
-                    <span class="method-list-title failed">Failed methods</span>
-                    <span class="show-or-hide-methods failed">
-                      <a href="#" panel-name="suite-MasterSuit" class="hide-methods failed suite-MasterSuit"> (hide)</a> <!-- hide-methods failed suite-MasterSuit -->
-                      <a href="#" panel-name="suite-MasterSuit" class="show-methods failed suite-MasterSuit"> (show)</a> <!-- show-methods failed suite-MasterSuit -->
-                    </span>
-                    <div class="method-list-content failed suite-MasterSuit">
-                      <span>
-                        <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-MasterSuit" title="issuemanagertestcases.LoginPageTestCases" class="method navigator-link" hash-for-method="login(Rudresh, 8073750774)">login(Rudresh, 8073750774)</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                    </div> <!-- method-list-content failed suite-MasterSuit -->
+                    <span class="method-stats">1 method,   1 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -117,12 +103,7 @@
                     <div class="method-list-content passed suite-MasterSuit">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-MasterSuit" title="issuemanagertestcases.LoginPageTestCases" class="method navigator-link" hash-for-method="login(Bikash, 8073750773)">login(Bikash, 8073750773)</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-MasterSuit" title="issuemanagertestcases.LoginPageTestCases" class="method navigator-link" hash-for-method="login(Adivesh, 8073750772)">login(Adivesh, 8073750772)</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-MasterSuit" title="issuemanagertestcases.LoginPageTestCases" class="method navigator-link" hash-for-method="login">login</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-MasterSuit -->
@@ -137,43 +118,6 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-MasterSuit" class="panel MasterSuit">
-          <div class="suite-MasterSuit-class-failed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="failed.png"/>
-              <span class="class-name">issuemanagertestcases.LoginPageTestCases</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="login(Rudresh, 8073750774)">
-                  </a> <!-- login(Rudresh, 8073750774) -->
-                  <span class="method-name">login</span>
-                  <span class="parameters">(Rudresh,8073750774)</span>
-                  <div class="stack-trace">org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=128.0.6613.138)
-Build info: version: &apos;4.19.0&apos;, revision: &apos;5f9cec8963&apos;
-System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.6&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [575a88dc123e8a2a75dc57c61e31b13a, get {url=https://vms.vapstech.com/#/login/}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 128.0.6613.138, chrome: {chromedriverVersion: 128.0.6613.137 (fe621c5aa2d..., userDataDir: C:\Users\DELL\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:55384}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:55384/devtoo..., se:cdpVersion: 128.0.6613.138, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 575a88dc123e8a2a75dc57c61e31b13a
-	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
-	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:300)
-	at issuemanagertestcases.LoginPageTestCases.login(LoginPageTestCases.java:17)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 32 stack frames
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-MasterSuit-class-failed -->
           <div class="suite-MasterSuit-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -182,18 +126,9 @@ Session ID: 575a88dc123e8a2a75dc57c61e31b13a
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="login(Bikash, 8073750773)">
-                  </a> <!-- login(Bikash, 8073750773) -->
+                  <a name="login">
+                  </a> <!-- login -->
                   <span class="method-name">login</span>
-                  <span class="parameters">(Bikash,8073750773)</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="login(Adivesh, 8073750772)">
-                  </a> <!-- login(Adivesh, 8073750772) -->
-                  <span class="method-name">login</span>
-                  <span class="parameters">(Adivesh,8073750772)</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -212,6 +147,8 @@ Session ID: 575a88dc123e8a2a75dc57c61e31b13a
     &lt;listener class-name=&quot;issuemanager.utilities.CustomTestListener&quot;/&gt;
   &lt;/listeners&gt;
   &lt;test thread-count=&quot;5&quot; name=&quot;Test&quot;&gt;
+    &lt;parameter name=&quot;os&quot; value=&quot;Windows&quot;/&gt;
+    &lt;parameter name=&quot;browser&quot; value=&quot;chrome&quot;/&gt;
     &lt;classes&gt;
       &lt;class name=&quot;issuemanagertestcases.LoginPageTestCases&quot;/&gt;
     &lt;/classes&gt;
@@ -253,19 +190,11 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(3);
+data.addRows(1);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'login')
 data.setCell(0, 2, 'issuemanagertestcases.LoginPageTestCases')
-data.setCell(0, 3, 16027);
-data.setCell(1, 0, 1)
-data.setCell(1, 1, 'login')
-data.setCell(1, 2, 'issuemanagertestcases.LoginPageTestCases')
-data.setCell(1, 3, 9234);
-data.setCell(2, 0, 2)
-data.setCell(2, 1, 'login')
-data.setCell(2, 2, 'issuemanagertestcases.LoginPageTestCases')
-data.setCell(2, 3, 25);
+data.setCell(0, 3, 25777);
 window.suiteTableData['MasterSuit']= { tableData: data, tableDiv: 'times-div-MasterSuit'}
 return data;
 }
@@ -298,28 +227,16 @@ return data;
             <div class="chronological-class">
               <div class="chronological-class-name">issuemanagertestcases.LoginPageTestCases</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
-                <span class="method-name">setup</span>
+                <span class="method-name">setup(Windows, chrome)</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
-                <span class="method-name">login(Adivesh, 8073750772)</span>
-                <span class="method-start">14372 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">login(Bikash, 8073750773)</span>
-                <span class="method-start">30509 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <img src="failed.png">
-                </img>
-                <span class="method-name">login(Rudresh, 8073750774)</span>
-                <span class="method-start">39748 ms</span>
+                <span class="method-name">login</span>
+                <span class="method-start">7203 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
-                <img src="failed.png">
-                </img>
                 <span class="method-name">tear</span>
-                <span class="method-start">39820 ms</span>
+                <span class="method-start">33020 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

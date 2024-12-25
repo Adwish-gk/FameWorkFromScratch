@@ -6,7 +6,7 @@
       <class name="issuemanagertestcases.LoginPageTestCases">
         <methods>
           <include name="tear"/>
-          <include name="login" invocation-numbers="1 2"/>
+          <include name="login"/>
           <include name="setup"/>
         </methods>
       </class> <!-- issuemanagertestcases.LoginPageTestCases -->

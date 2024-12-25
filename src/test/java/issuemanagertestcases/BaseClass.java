@@ -40,6 +40,7 @@ public class BaseClass
 		case "firefox":driver=new FirefoxDriver();
 		case "edge":driver=new EdgeDriver();
 		default:System.out.print("Invalid Browser Name");return;
+		
 		}
 		logger=LogManager.getLogger(this.getClass());
 		driver.manage().window().maximize();
@@ -49,7 +50,7 @@ public class BaseClass
 	@AfterClass
 	public void tear()
 	{
-		driver.close();
+		//driver.close();
 	}
 	
 	public String captureScreen(String name) throws IOException{

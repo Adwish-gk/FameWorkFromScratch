@@ -15,7 +15,7 @@
 <dependency>
     <groupId>org.seleniumhq.selenium</groupId>
     <artifactId>selenium-java</artifactId>
-    <version>4.19.0</version>
+    <version>4.27.0</version>
 </dependency>
 <!-- https://mvnrepository.com/artifact/org.testng/testng -->
 <dependency>
@@ -68,5 +68,11 @@
     <version>2.23.1</version>
     <scope>test</scope>
 </dependency>
+<dependency>
+  <groupId>org.slf4j</groupId>
+  <artifactId>slf4j-log4j12</artifactId>
+  <version>1.7.36</version>
+</dependency>
+
 </dependencies>
 </project>

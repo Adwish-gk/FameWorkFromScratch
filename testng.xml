@@ -6,7 +6,7 @@
 </listeners>
   <test thread-count="5" name="Test">
   <parameter name="os" value="Windows"></parameter>
-  <parameter name="browser" value="firefox"></parameter>
+  <parameter name="browser" value="chrome"></parameter>
     <classes>
       <class name="issuemanagertestcases.LoginPageTestCases"/>
     </classes>

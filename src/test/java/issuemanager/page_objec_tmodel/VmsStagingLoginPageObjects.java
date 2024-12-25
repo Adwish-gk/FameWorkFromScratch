@@ -1,4 +1,6 @@
-package issuemanager.page_objec_tmodel;
+  package issuemanager.page_objec_tmodel;
+
+import java.util.List;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -15,20 +17,25 @@ public class VmsStagingLoginPageObjects
 		vdriver=driver;
 		PageFactory.initElements(vdriver,this);
 	}
-	@FindBy(id="form2") private WebElement username;
-	@FindBy(name="password") private WebElement password;
-	@FindBy(xpath="(//button[@type=\"submit\"])[1]") private WebElement signinbtn;
+	//@FindBy(id="landing_bookbtn") private WebElement BookServicebtn;
+	@FindBy(xpath="/html/body/app-root/app-order-book-page/div/div/div[1]/app-book-service-v2/div/div/div/div/div/div/div[3]/input") public WebElement mobilenumbertxtbox;
+	@FindBy(xpath="/html/body/app-root/app-order-book-page/div/div/div[1]/app-book-service-v2/div/div/div/div/div/div/button") private WebElement Proceedbtn;
+	@FindBy(xpath="/html/body/app-root/app-order-book-page/div/div/div[1]/app-book-service-v2/div/div/div/div/div/div[3]/input") public List<WebElement> otptextfield;
+	@FindBy(xpath="/html/body/app-root/app-order-book-page/div/div/div[1]/app-book-service-v2/div/div/div/div/div/button") public WebElement verifyNow;
 	
-	public void setusername(String loginusername) 
+	public void setNumber(String number) 
 	{
-		username.sendKeys(loginusername);
+	    mobilenumbertxtbox.sendKeys(number); // Convert int to String
+	    
 	}
-	public void setpassword(String loginpassword) 
+   public void clickproceed()
 	{
-		password.sendKeys(loginpassword);
+		Proceedbtn.click();
 	}
-	public void cclick()
+   
+   public void clickverifyNowbtn() 
 	{
-		signinbtn.click();
+	   verifyNow.click();
 	}
 }
+  
